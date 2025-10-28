@@ -34,7 +34,7 @@ dt{
 footer{
     font-size: .7rem;
     text-align: center;
-    font-style; italic;
+    font-weight: italic;
 }
 #wrapper {
     margin: auto;
