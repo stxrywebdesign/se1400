@@ -17,7 +17,6 @@ nav {
     font-weight: bold;
     padding: .5rem;
     padding-left: 2rem;
-    text-decoration: none;
 }
 
 header h1 {
@@ -71,7 +70,7 @@ main {
 }
 
 #homehero {
-    background-image: url('../images/home-hero.jpg');
+    background-image: url('../utahtechimages/homehero.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -79,16 +78,19 @@ main {
 }
 
 #facultyhero {
-    background-image: url('../images/faculty-hero.jpg');
+    background-image: url('../utahtechimages/facultyhero.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     height: 300px;
 }
 #studenthero {
-    background-image: url('../images/student-hero.jpg');
+    background-image: url('../utahtechimages/studenthero.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     height: 300px;
+}
+nav a{
+    text-decoration: none;
 }
