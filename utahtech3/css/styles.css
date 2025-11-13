@@ -85,3 +85,10 @@ main {
     background-position: center;
     height: 300px;
 }
+#studenthero {
+    background-image: url('../images/student-hero.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 300px;
+}
