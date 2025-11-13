@@ -17,6 +17,7 @@ nav {
     font-weight: bold;
     padding: .5rem;
     padding-left: 2rem;
+    text-decoration: none;
 }
 
 header h1 {
@@ -26,26 +27,31 @@ header h1 {
     background-position: right;
     background-repeat: no-repeat;
     background-origin: content-box;
-    margin-bottom:0;
+    margin-bottom: 0;
 }
-h2{
+
+h2 {
     color: #424242;
     font-family: 'Georgia', 'Times New Roman', Times, serif;
 }
-dt{ 
+
+dt {
     font-weight: bold;
     color: #003058
 }
+
 .ut {
-        font-weight: bold;
-        color: #ba1c21
-    }
-footer{
+    font-weight: bold;
+    color: #ba1c21
+}
+
+footer {
     font-size: .7rem;
     text-align: center;
     font-style: italic;
     padding: 1rem;
 }
+
 #wrapper {
     background-color: #FFFFFF;
     margin: auto;
@@ -54,15 +60,26 @@ footer{
     max-width: 2048px;
     box-shadow: 0px, 3px, 3px rgba(66, 66, 66, 0.3);
 }
-h3{
+
+h3 {
     color: #003058;
 }
-main{
+
+main {
     padding-left: 2rem;
     padding-right: 2rem;
 }
-#homehero{
+
+#homehero {
     background-image: url('../images/home-hero.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 300px;
+}
+
+#facultyhero {
+    background-image: url('../images/faculty-hero.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
