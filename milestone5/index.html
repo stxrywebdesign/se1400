@@ -8,17 +8,19 @@
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: Arial, sans-serif; background: #f8f9fa; padding: 20px; }
         
-        .container { 
-            max-width: 900px; 
-            margin: 0 auto; 
-            background: white; 
-            padding: 25px;
-            display: grid;
-            grid-template-columns: 1fr 250px;
-            grid-template-rows: auto auto auto auto auto auto auto;
-            gap: 15px;
+        @media (max-width:768px){
+            .container { 
+                max-width: 900px; 
+                margin: 0 auto; 
+                background: white; 
+                padding: 25px;
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-areas: "main-content";
+                grid-template-rows: auto auto auto auto auto auto auto;
+                gap: 15px;
+            }
         }
-        
         .header { 
             grid-column: 1 / 2;
             grid-row: 1 / 2;
@@ -160,35 +162,67 @@
         
         <div class="contestants">
             <div class="card">
-                <h4>placeholder</h4>
+                <picture>
+                    <source media="(min-width:650px)" srcset="IMG_2215.JPEG">
+                    <img src="IMG_2215.JPEG" alt="Nina" style="width:auto;">
+                </picture>
+                <h4>NINA FLAVA</h4>
                 <span class="place p1">WINNER</span>
             </div>
             <div class="card">
-                <h4>placeholder</h4>
+                <picture>
+                    <source media="(min-width:650px)" srcset="channels4_profile.jpg">
+                    <img src="channels4_profile.jpg" alt="Isaac" style="width:auto;">
+                </picture>
+                <h4>YUGOSLAVIA</h4>
                 <span class="place p2">2ND PLACE</span>
             </div>
             <div class="card">
-                <h4>placeholder</h4>
+                <picture>
+                    <source media="(min-width:650px)" srcset="IMG_2215.JPEG">
+                    <img src="IMG_2215.JPEG" alt="Nina" style="width:auto;">
+                </picture>
+                <h4>HEIL PENINA</h4>
                 <span class="place p3">3RD PLACE</span>
             </div>
             <div class="card">
-                <h4>placeholder</h4>
+                <picture>
+                    <source media="(min-width:650px)" srcset="IMG_2215.JPEG">
+                    <img src="IMG_2215.JPEG" alt="Nina" style="width:auto;">
+                </picture>
+                <h4>idk whats going on</h4>
                 <span class="place p4">4TH PLACE</span>
             </div>
             <div class="card">
-                <h4>placeholder</h4>
+                <picture>
+                    <source media="(min-width:650px)" srcset="channels4_profile.jpg">
+                    <img src="channels4_profile.jpg" alt="Isaac" style="width:auto;">
+                </picture>
+                <h4>JARED FOGLE</h4>
                 <span class="place p4">5TH PLACE</span>
             </div>
             <div class="card">
-                <h4>placeholder</h4>
+                <picture>
+                    <source media="(min-width:650px)" srcset="images.jpeg">
+                    <img src="images.jpeg" alt="CARSON" style="width:auto;">
+                </picture>
+                <h4>CARSON</h4>
                 <span class="place p4">6TH PLACE</span>
             </div>
             <div class="card">
-                <h4>placeholder</h4>
+                <picture>
+                    <source media="(min-width:650px)" srcset="images.jpeg">
+                    <img src="images.jpeg" alt="EVAN" style="width:auto;">
+                </picture>
+                <h4>EvAN</h4>
                 <span class="place p4">7TH PLACE</span>
             </div>
             <div class="card">
-                <h4>placeholder</h4>
+                <picture>
+                    <source media="(min-width:650px)" srcset="images.jpeg">
+                    <img src="images.jpeg" alt="DALLIN" style="width:auto;">
+                </picture>
+                <h4>DALLIN</h4>
                 <span class="place p4">8TH PLACE</span>
             </div>
         </div>
@@ -200,35 +234,35 @@
                     <th>Name</th><th>W1</th><th>W2</th><th>W3</th><th>W4</th><th>W5</th><th>Final</th>
                 </tr>
                 <tr>
-                    <td class="name">Miles</td>
+                    <td class="name">NINA</td>
                     <td class="safe">SAFE</td><td class="hoh">HOH</td><td class="nom">NOM</td><td class="veto">VTO</td><td class="hoh">HOH</td><td class="p1">WIN</td>
                 </tr>
                 <tr>
-                    <td class="name">Sarah</td>
+                    <td class="name">ISAAC</td>
                     <td class="hoh">HOH</td><td class="safe">SAFE</td><td class="veto">VTO</td><td class="nom">NOM</td><td class="safe">SAFE</td><td class="p2">2ND</td>
                 </tr>
                 <tr>
-                    <td class="name">Destiny</td>
+                    <td class="name">NINA</td>
                     <td class="nom">NOM</td><td class="safe">SAFE</td><td class="hoh">HOH</td><td class="safe">SAFE</td><td class="nom">NOM</td><td class="p3">3RD</td>
                 </tr>
                 <tr>
-                    <td class="name">Jake</td>
+                    <td class="name">NINA</td>
                     <td class="safe">SAFE</td><td class="nom">NOM</td><td class="safe">SAFE</td><td class="hoh">HOH</td><td class="evict">OUT</td><td>—</td>
                 </tr>
                 <tr>
-                    <td class="name">Nina</td>
+                    <td class="name">ISAAC</td>
                     <td class="veto">VTO</td><td class="safe">SAFE</td><td class="safe">SAFE</td><td class="evict">OUT</td><td>—</td><td>—</td>
                 </tr>
                 <tr>
-                    <td class="name">Tyler</td>
+                    <td class="name">UGLY</td>
                    <td class="safe">SAFE</td><td class="veto">VTO</td><td class="evict">OUT</td><td>—</td><td>—</td><td>—</td>
                 </tr>
                 <tr>
-                    <td class="name">Emma</td>
+                    <td class="name">UGLY</td>
                     <td class="safe">SAFE</td><td class="evict">OUT</td><td>—</td><td>—</td><td>—</td><td>—</td>
                 </tr>
                 <tr>
-                    <td class="name">Devon</td>
+                    <td class="name">TOUCHER</td>
                     <td class="evict">OUT</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td>
                 </tr>
             </table>
