@@ -8,7 +8,7 @@ body {
     font-family: Arial, sans-serif;
     background-attachment: fixed;
     background-image: linear-gradient(to bottom, #ffffff, #eeeeee);
-    margin: 0px;
+    margin: 0px
 }
 
 header {
@@ -59,13 +59,13 @@ footer {
     font-style: italic;
     padding: 1rem;
     grid-row: 5 / 6;
-    grid-column: 2 / -2;
+    grid-column: 2/ -2;
 }
 
 #wrapper {
     display: grid;
     grid-auto-rows: minmax(0, auto);
-    grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 175px));
+    grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 175px)) minmax(0px, 1fr)
 }
 
 h3 {
@@ -137,4 +137,124 @@ main img {
 header a {
     text-decoration: none;
     color: #ffffff;
+}
+
+#bluebar {
+    background-color: #003058;
+    grid-row: 1 / 2;
+    grid-column: 1 / 9;
+}
+
+#graybar {
+    background-color: #424242;
+    grid-row: 1 / 2;
+    grid-column: 1 / 9;
+}
+
+@media only screen and (max-width: 1100px) {
+
+    #wrapper {
+        display: grid;
+        grid-auto-rows: minmax(0, auto);
+        grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 150px));
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    nav{
+        grid-row: 2/3;
+        grid-column: 1/5;
+        position:static
+    }
+    nav ul {
+        flex-flow: column nowrap;   
+    }
+    #homehero {
+    background-image: url('../utahtechimages/homehero.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: auto;
+    grid-row: 2 / 3;
+    grid-column: 5 / 8;
+    }
+
+    #facultyhero {
+    background-image: url('../utahtechimages/facultyhero.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: auto;
+    grid-row: 2/ 3;
+    grid-column: 5 / 8;
+    }
+
+    #studenthero {
+    background-image: url('../utahtechimages/studenthero.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: auto;
+    grid-row: 2 / 3;
+    grid-column: 5/ 8;
+    }
+    main img {
+    float: none;
+    padding-left: 0px;
+    width: 100%;
+    height:auto;
+}
+}
+@media only screen and (max-width: 600px) {
+    header h1 {
+    line-height: 140%;
+    padding: .5rem;
+    padding-left: 1rem;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    margin: 0;
+    background-image: none;
+    text-align: center;
+    }
+    nav {
+    background-color: #424242;
+    font-weight: bold;
+    position: sticky;
+    top: 0;
+    grid-row: 2 / 3;
+    grid-column: 1 / 9;
+    } 
+    #homehero {
+    background-image: url('../utahtechimages/homehero.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: auto;
+    grid-row: 2 / 3;
+    grid-column: 5 / 8;
+    display: none;
+    }
+
+    #facultyhero {
+    background-image: url('../utahtechimages/facultyhero.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: auto;
+    grid-row: 2/ 3;
+    grid-column: 5 / 8;
+    display: none;
+    }
+
+    #studenthero {
+    background-image: url('../utahtechimages/studenthero.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: auto;
+    grid-row: 2 / 3;
+    grid-column: 5/ 8;
+    display: none;
+    }
 }
