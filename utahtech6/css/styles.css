@@ -109,6 +109,16 @@ main {
     grid-column: 2 / -2;
 }
 
+#alumnihero {
+    background-image: url('../utahtechimages/alumnihero.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 300px;
+    grid-row: 3 / 4;
+    grid-column: 2 / -2;
+}
+
 nav a:hover {
     text-decoration: none;
     color: #FFFFFF;
@@ -207,6 +217,16 @@ header a {
         width: 100%;
         height: auto;
     }
+
+    #alumnihero {
+        background-image: url('../utahtechimages/alumnihero.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: auto;
+        grid-row: 2 / 3;
+        grid-column: 5 / 8;
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -263,12 +283,23 @@ header a {
         grid-column: 5/ 8;
         display: none;
     }
+
+    #alumnihero {
+        background-image: url('../utahtechimages/alumnihero.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: auto;
+        grid-row: 2 / 3;
+        grid-column: 5 / 8;
+        display: none;
+    }
 }
 
 form {
     display: grid;
     grid-template-rows: auto;
-    grid-template-columns: 200px, 1fr;
+    grid-template-columns: 200px 1fr;
     gap: 0.75rem;
     width: 100%
 }
@@ -281,7 +312,6 @@ input {
     border: 0;
 }
 
-input,
 textarea {
     font-size: 1rem;
     padding: 10px;
@@ -290,16 +320,22 @@ textarea {
     border: 0;
 }
 
-input:focus,
+input:focus {
+    outline: none;
+    background-color: #f0f0f0;
+}
+
 textarea:focus {
     outline: none;
     background-color: #f0f0f0;
 }
 
-label{
+label {
     padding: 10px;
     text-align: right;
 }
-#Submit{
-    
+
+#Submit {
+    width: 10rem;
+    columns: 2 / 3;
 }

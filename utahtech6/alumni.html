@@ -24,24 +24,27 @@
         <li><a href="alumni.html">Alumni</a></li>
       </ul>
     </nav>
-    <div id="homehero">
+    <div id="alumnihero">
     </div>
     <main>
       <h2>Join Alumni Mailing List</h2>
       <h3>Request Alumni Newsletter</h3>
+      <p>Required information is marked with an asterisk (*).</p>
       <form method="post" action="https://kearl.net/se1400/mail.php">
-      <label for="MyFname">First Name:</label>
-      <input type="text" id="MyFname" name="MyFname"><br><br>
-      <label for="MyLname">Last Name:</label>
-      <input type="text" id="MyLname" name="MyLname"><br><br>
-      <label for="MyEmail">E-Mail:</label>
-      <input type="text" id="MyEmail" name="MyEmail"><br><br>
-      <label for="MyPhone">Phone:</label>
-      <input type="text" id="MyPhone" name="MyPhone"><br><br>
-      <label for="MyComments">Comments:</label>
-      <textarea id="MyComments" name="MyComments"></textarea><br><br>
-      <label for="Submit">Submit:</label>
-      <input type="submit" id="Submit" name="Submit"><br><br>
+        <label for="MyFname">* First Name:</label>
+        <input type="text" id="MyFname" name="MyFname" required>
+        <label for="MyLname">* Last Name:</label>
+        <input type="text" id="MyLname" name="MyLname" required>
+        <label for="MyEmail">* E-Mail:</label>
+        <input type="email" id="MyEmail" name="MyEmail" required>
+        <label for="MyPhone">Phone:</label>
+        <input type="tel" id="MyPhone" name="MyPhone">
+        <label for="graduation">Graduation Date:</label>
+        <input type="date" id="graduation" name="graduation">
+        <label for="MyComments">* Comments:</label>
+        <textarea id="MyComments" name="MyComments" required></textarea>
+        <label for="Submit">Submit:</label>
+        <input type="submit" id="Submit" name="Submit">
       </form>
     </main>
     <footer>
